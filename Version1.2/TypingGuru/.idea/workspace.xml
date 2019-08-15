@@ -1,0 +1,758 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="TypingGuru" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ca6afb2d-c2b9-4c19-847b-244a25d5c7a5" name="Default Changelist" comment="" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/abdheshnayak/typingguru/MainWindowController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="380">
+              <caret line="627" column="54" selection-start-line="627" selection-start-column="54" selection-end-line="627" selection-end-column="54" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/abdheshnayak/typingguru/Mainwindow.fxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="28" column="61" selection-start-line="28" selection-start-column="61" selection-end-line="28" selection-end-column="61" />
+            </state>
+          </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder" />
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="module-info" />
+        <option value="Interface" />
+        <option value="FxmlFile" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>keys</find>
+      <find>strword</find>
+      <find>write</find>
+      <find>tw.write</find>
+      <find>400</find>
+      <find>user</find>
+      <find>language</find>
+      <find>onAction</find>
+      <find>choic</find>
+      <find>handle</find>
+      <find>pause</find>
+      <find>Start</find>
+      <find>pouse</find>
+      <find>td</find>
+      <find>, strFirst, strLast</find>
+      <find>start</find>
+      <find>null</find>
+      <find>Abdhesh Nayak</find>
+      <find>quit</find>
+      <find>close</find>
+      <find>image</find>
+      <find>init</find>
+      <find>about</find>
+      <find>load</find>
+      <find>keyboardload</find>
+      <find>label</find>
+      <find>tempkeyboard</find>
+      <find>webview</find>
+      <find>System</find>
+      <find>help</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>staticData.myDir+&quot;</replace>
+      <replace>&quot;file://&quot;+staticData.myDir+&quot;</replace>
+      <replace>8.0.211</replace>
+      <replace>.src</replace>
+      <replace>task</replace>
+      <replace>dual</replace>
+      <replace>&quot;&lt;span style=\&quot;font-family:arial;\&quot;&gt;_&lt;/span&gt;&quot;</replace>
+      <replace>span\\\\u00A0style</replace>
+      <replace>&quot;_&quot;</replace>
+      <replace>cntrl</replace>
+      <replace>Icons</replace>
+      <replace>pause</replace>
+    </replaceStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/com/abdheshnayak/typingguru/passwordChecker.fxml" />
+        <option value="$PROJECT_DIR$/.src/Images/keyboard/nepaliStyle.css" />
+        <option value="$PROJECT_DIR$/src/com/abdheshnayak/typingguru/staticData.java" />
+        <option value="$PROJECT_DIR$/src/com/abdheshnayak/typingguru/JavaClasses/languageCssController.java" />
+        <option value="$PROJECT_DIR$/.src/Images/keyboard/Telgu.css" />
+        <option value="$PROJECT_DIR$/.src/Images/keyboard/Korean.css" />
+        <option value="$PROJECT_DIR$/.src/Images/keyboard/Arabic.css" />
+        <option value="$PROJECT_DIR$/.src/Images/keyboard/Preeti/tempStylesheet.css" />
+        <option value="$PROJECT_DIR$/src/com/abdheshnayak/typingguru/tempDatas.java" />
+        <option value="$PROJECT_DIR$/.src/Images/keyboard/Bangali.css" />
+        <option value="$PROJECT_DIR$/.src/Images/keyboard/Hindi.css" />
+        <option value="$PROJECT_DIR$/.src/Images/keyboard/Nepali.css" />
+        <option value="$PROJECT_DIR$/.src/Images/keyboard/Punjabi.css" />
+        <option value="$PROJECT_DIR$/.src/Images/keyboard/Urdu.css" />
+        <option value="$PROJECT_DIR$/.src/Images/keyboard/English.css" />
+        <option value="$PROJECT_DIR$/src/com/abdheshnayak/typingguru/Controller.java" />
+        <option value="$PROJECT_DIR$/src/com/abdheshnayak/typingguru/cntrl.java" />
+        <option value="$PROJECT_DIR$/src/com/abdheshnayak/typingguru/JavaClasses/Navigation.java" />
+        <option value="$PROJECT_DIR$/src/com/abdheshnayak/typingguru/BaseController.java" />
+        <option value="$PROJECT_DIR$/src/com/abdheshnayak/typingguru/Hello/test.fxml" />
+        <option value="$PROJECT_DIR$/src/com/abdheshnayak/typingguru/Hello/test.java" />
+        <option value="$PROJECT_DIR$/src/com/abdheshnayak/typingguru/FreeTypingWindow.java" />
+        <option value="$PROJECT_DIR$/src/com/abdheshnayak/typingguru/mainwindow.fxml" />
+        <option value="$PROJECT_DIR$/src/com/abdheshnayak/typingguru/FreeTypingWindow.fxml" />
+        <option value="$PROJECT_DIR$/src/com/abdheshnayak/typingguru/DeleteUser.java" />
+        <option value="$PROJECT_DIR$/.src/UserData/userData.data" />
+        <option value="$PROJECT_DIR$/.src/UserData/LanguageList.list" />
+        <option value="$PROJECT_DIR$/src/com/abdheshnayak/typingguru/JavaClasses/fileReaderClass.java" />
+        <option value="$PROJECT_DIR$/src/com/abdheshnayak/typingguru/JavaClasses/staticData.java" />
+        <option value="$PROJECT_DIR$/src/com/abdheshnayak/typingguru/JavaClasses/tempDatas.java" />
+        <option value="$PROJECT_DIR$/src/com/abdheshnayak/typingguru/JavaClasses/usrData.java" />
+        <option value="$PROJECT_DIR$/src/com/abdheshnayak/typingguru/JavaClasses/langClass.java" />
+        <option value="$PROJECT_DIR$/src/com/abdheshnayak/typingguru/topUsersView.fxml" />
+        <option value="$PROJECT_DIR$/src/com/abdheshnayak/typingguru/topUsersView.java" />
+        <option value="$PROJECT_DIR$/src/com/abdheshnayak/typingguru/addUserClass.java" />
+        <option value="$PROJECT_DIR$/src/com/abdheshnayak/typingguru/UserSelector.java" />
+        <option value="$PROJECT_DIR$/src/com/abdheshnayak/typingguru/keyboardController/htmlWriter.java" />
+        <option value="$PROJECT_DIR$/src/com/abdheshnayak/typingguru/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/abdheshnayak/typingguru/StoriesTyping.java" />
+        <option value="$PROJECT_DIR$/.src/Images/keyboard/styleoftoTypehtml.css" />
+        <option value="$PROJECT_DIR$/src/com/abdheshnayak/typingguru/FreeWriting.fxml" />
+        <option value="$PROJECT_DIR$/src/com/abdheshnayak/typingguru/JavaClasses/toTypeController.java" />
+        <option value="$PROJECT_DIR$/src/com/abdheshnayak/typingguru/FreeWriting.java" />
+        <option value="$PROJECT_DIR$/src/com/abdheshnayak/typingguru/deleteUser.fxml" />
+        <option value="$PROJECT_DIR$/src/com/abdheshnayak/typingguru/StoriesTyping.fxml" />
+        <option value="$PROJECT_DIR$/src/com/abdheshnayak/typingguru/aboutApp.fxml" />
+        <option value="$PROJECT_DIR$/.src/Images/AboutUs/index.html" />
+        <option value="$PROJECT_DIR$/src/com/abdheshnayak/typingguru/AboutApp.java" />
+        <option value="$PROJECT_DIR$/src/com/abdheshnayak/typingguru/JavaClasses/SorterClass.java" />
+        <option value="$PROJECT_DIR$/src/com/abdheshnayak/typingguru/Mainwindow.fxml" />
+        <option value="$PROJECT_DIR$/src/com/abdheshnayak/typingguru/MainWindowController.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="993" />
+    <option name="y" value="25" />
+    <option name="width" value="927" />
+    <option name="height" value="1055" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="TypingGuru" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TypingGuru" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TypingGuru" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TypingGuru" type="462c0819:PsiDirectoryNode" />
+              <item name=".src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TypingGuru" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TypingGuru" type="462c0819:PsiDirectoryNode" />
+              <item name=".src" type="462c0819:PsiDirectoryNode" />
+              <item name="Images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TypingGuru" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TypingGuru" type="462c0819:PsiDirectoryNode" />
+              <item name=".src" type="462c0819:PsiDirectoryNode" />
+              <item name="Images" type="462c0819:PsiDirectoryNode" />
+              <item name="AboutUs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TypingGuru" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TypingGuru" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TypingGuru" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TypingGuru" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="typingguru" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TypingGuru" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TypingGuru" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="typingguru" type="462c0819:PsiDirectoryNode" />
+              <item name="JavaClasses" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TypingGuru" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TypingGuru" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="typingguru" type="462c0819:PsiDirectoryNode" />
+              <item name="keyboardController" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="GenerateAntBuildDialog.backupFiles" value="true" />
+    <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
+    <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
+    <property name="GenerateAntBuildDialog.outputFileNameProperty" value="typingguru" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../VAnavigation-master/src" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/.src/Images/keyboard" />
+      <recent name="$PROJECT_DIR$/src/com/abdheshnayak/typingguru" />
+      <recent name="$PROJECT_DIR$/.src" />
+      <recent name="$PROJECT_DIR$/src/UserData" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.abdheshnayak.typingguru.Main" />
+      <module name="TypingGuru" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ca6afb2d-c2b9-4c19-847b-244a25d5c7a5" name="Default Changelist" comment="" />
+      <created>1562146878543</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1562146878543</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.11510792" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3297414" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.31034482" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3298969" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3297414" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2562258" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3297414" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.31034482" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3298969" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3297414" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+    </layout-to-restore>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/com/abdheshnayak/typingguru/JavaClasses/languageCssController.java" />
+    <entry file="file://$PROJECT_DIR$/.src/Images/keyboard/Korean.css" />
+    <entry file="file://$PROJECT_DIR$/.src/Images/keyboard/Fonts/tempStylesheet.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="44" selection-start-line="4" selection-start-column="44" selection-end-line="4" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.src/Images/keyboard/Bangali.css" />
+    <entry file="file://$PROJECT_DIR$/.src/Images/keyboard/Fonts/Hindi.ttf">
+      <provider selected="true" editor-type-id="fontseditor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.src/Images/keyboard/Hindi.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="14" selection-start-column="14" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.src/Images/keyboard/Nepali.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="14" selection-start-column="14" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.src/Images/keyboard/Punjabi.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="14" selection-start-column="14" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.src/Images/keyboard/Urdu.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="14" selection-start-column="14" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.src/Images/keyboard/English.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/abdheshnayak/typingguru/cntrl.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/abdheshnayak/typingguru/JavaClasses/Navigation.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/abdheshnayak/typingguru/BaseController.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/abdheshnayak/typingguru/Hello/test.fxml" />
+    <entry file="file://$PROJECT_DIR$/src/com/abdheshnayak/typingguru/Hello/test.java" />
+    <entry file="file://$PROJECT_DIR$/.src/UserData/LanguageList.list">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="178" selection-start-line="1" selection-start-column="178" selection-end-line="1" selection-end-column="178" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.src/Images/Icons/usericon.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.src/UserData/userData.data">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="82" selection-start-line="2" selection-start-column="82" selection-end-line="2" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/abdheshnayak/typingguru/topUsersView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="40" column="33" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/abdheshnayak/typingguru/passwordChecker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="39" column="28" selection-start-line="39" selection-start-column="28" selection-end-line="39" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///opt/jdk1.8.0_211/src.zip!/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="110" column="19" selection-start-line="110" selection-start-column="19" selection-end-line="110" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.src/Images/keyboard/temptoTypehtmlfile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.src/lesson/Stories/STORY1.LSN">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="104" selection-end-column="104" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/abdheshnayak/typingguru/StoriesTyping.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="28" column="28" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.src/Images/keyboard/styleoftoTypehtml.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/abdheshnayak/typingguru/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="23" column="99" selection-start-line="23" selection-start-column="89" selection-end-line="23" selection-end-column="99" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/abdheshnayak/typingguru/FreeWriting.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="147" column="11" selection-start-line="147" selection-start-column="11" selection-end-line="147" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/abdheshnayak/typingguru/UserSelector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="78" selection-start-line="78" selection-end-line="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/abdheshnayak/typingguru/addUserWindow.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="147" selection-start-line="12" selection-start-column="140" selection-end-line="12" selection-end-column="147" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/abdheshnayak/typingguru/deleteUser.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="68" selection-start-line="14" selection-start-column="68" selection-end-line="14" selection-end-column="68" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/abdheshnayak/typingguru/FreeWriting.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1215">
+          <caret line="81" column="113" selection-start-line="81" selection-start-column="113" selection-end-line="81" selection-end-column="113" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/abdheshnayak/typingguru/passwordChecker.fxml">
+      <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/abdheshnayak/typingguru/StoriesTyping.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="174" selection-start-line="15" selection-start-column="174" selection-end-line="15" selection-end-column="174" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/abdheshnayak/typingguru/topUsersView.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/abdheshnayak/typingguru/UserSelector.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1185">
+          <caret line="79" column="25" lean-forward="true" selection-start-line="79" selection-start-column="25" selection-end-line="79" selection-end-column="25" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.src/Images/AboutUs/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="7" lean-forward="true" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/abdheshnayak/typingguru/JavaClasses/isShiftdownConvert.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/abdheshnayak/typingguru/JavaClasses/langClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="57" selection-start-line="8" selection-start-column="57" selection-end-line="8" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/abdheshnayak/typingguru/JavaClasses/SorterClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/abdheshnayak/typingguru/JavaClasses/staticData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/abdheshnayak/typingguru/JavaClasses/tempDatas.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="37" column="18" selection-start-line="37" selection-start-column="18" selection-end-line="37" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/abdheshnayak/typingguru/JavaClasses/toTypeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2505">
+          <caret line="167" column="16" selection-start-line="167" selection-start-column="10" selection-end-line="167" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/abdheshnayak/typingguru/JavaClasses/usrData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/abdheshnayak/typingguru/JavaClasses/fileReaderClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="22" lean-forward="true" selection-start-line="21" selection-end-line="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/abdheshnayak/typingguru/aboutApp.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="23" column="53" selection-start-line="23" selection-start-column="53" selection-end-line="23" selection-end-column="53" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/abdheshnayak/typingguru/keyboardController/htmlWriter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8880">
+          <caret line="616" column="29" selection-start-line="616" selection-start-column="29" selection-end-line="616" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#559#567#0" expanded="true" />
+            <element signature="method#read#0;class#htmlWriter#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/abdheshnayak/typingguru/AboutApp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/abdheshnayak/typingguru/addUserClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2490">
+          <caret line="166" column="21" selection-start-line="166" selection-start-column="21" selection-end-line="166" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/abdheshnayak/typingguru/DeleteUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="44" column="35" selection-start-line="44" selection-start-column="35" selection-end-line="44" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/abdheshnayak/typingguru/Mainwindow.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="28" column="61" selection-start-line="28" selection-start-column="61" selection-end-line="28" selection-end-column="61" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/abdheshnayak/typingguru/MainWindowController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="627" column="54" selection-start-line="627" selection-start-column="54" selection-end-line="627" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor>
+            <show-content>
+              <type id="library" />
+              <type id="artifact" />
+            </show-content>
+          </artifact-editor>
+          <last-edited>TypingGuru</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>javafx-swt</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>TypingGuru</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>TypingGuru</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

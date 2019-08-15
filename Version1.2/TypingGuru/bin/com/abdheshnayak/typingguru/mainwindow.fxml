@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.web.WebView?>
+
+<GridPane fx:id="MainGridPane" alignment="center" hgap="10" style="-fx-background-color:gray;" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.abdheshnayak.typingguru.MainWindowController">
+    <VBox prefHeight="776.0" prefWidth="1410.0" style="-fx-font-size: 20;-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+        <children>
+            <MenuBar VBox.vgrow="NEVER">
+                <menus>
+                    <Menu mnemonicParsing="false" text="File">
+                        <items>
+                            <MenuItem mnemonicParsing="false" text="New" />
+                            <MenuItem mnemonicParsing="false" text="Open…" />
+                            <Menu mnemonicParsing="false" text="Open Recent" />
+                            <SeparatorMenuItem mnemonicParsing="false" />
+                            <MenuItem mnemonicParsing="false" text="Close" />
+                            <MenuItem mnemonicParsing="false" text="Save" />
+                            <MenuItem mnemonicParsing="false" text="Save As…" />
+                            <MenuItem mnemonicParsing="false" text="Revert" />
+                            <SeparatorMenuItem mnemonicParsing="false" />
+                            <MenuItem mnemonicParsing="false" text="Preferences…" />
+                            <SeparatorMenuItem mnemonicParsing="false" />
+                            <MenuItem mnemonicParsing="false" text="Quit" />
+                        </items>
+                    </Menu>
+                    <Menu mnemonicParsing="false" text="Edit">
+                        <items>
+                            <MenuItem mnemonicParsing="false" text="Undo" />
+                            <MenuItem mnemonicParsing="false" text="Redo" />
+                            <SeparatorMenuItem mnemonicParsing="false" />
+                            <MenuItem mnemonicParsing="false" text="Cut" />
+                            <MenuItem mnemonicParsing="false" text="Copy" />
+                            <MenuItem mnemonicParsing="false" text="Paste" />
+                            <MenuItem mnemonicParsing="false" text="Delete" />
+                            <SeparatorMenuItem mnemonicParsing="false" />
+                            <MenuItem mnemonicParsing="false" text="Select All" />
+                            <MenuItem mnemonicParsing="false" text="Unselect All" />
+                        </items>
+                    </Menu>
+                    <Menu mnemonicParsing="false" text="Help">
+                        <items>
+                            <MenuItem mnemonicParsing="false" text="About MyHelloApp" />
+                        </items>
+                    </Menu>
+                </menus>
+            </MenuBar>
+            <BorderPane prefHeight="499.0" prefWidth="902.0" VBox.vgrow="ALWAYS">
+                <top>
+                    <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                        <children>
+                            <Button fx:id="btnHome" contentDisplay="TOP" mnemonicParsing="false" onKeyPressed="#onHandleKeyPressed" onMouseClicked="#mouceClickedAction" prefHeight="78.0" text="Home">
+                                <graphic>
+                                    <ImageView fx:id="HomeIcon" fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                                    </ImageView>
+                                </graphic>
+                            </Button>
+                     <Button fx:id="btnAddUser" contentDisplay="TOP" mnemonicParsing="false" onKeyPressed="#onHandleKeyPressed" onMouseClicked="#mouceClickedAction" prefHeight="78.0" text="Add User">
+                        <graphic>
+                           <ImageView fx:id="adduserIcon" fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true" />
+                        </graphic>
+                     </Button>
+                            <Button fx:id="btnTop" contentDisplay="TOP" mnemonicParsing="false" onKeyPressed="#onHandleKeyPressed" onMouseClicked="#mouceClickedAction" prefHeight="78.0" text="Top">
+                                <graphic>
+                                    <ImageView fx:id="topicon" fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                                    </ImageView>
+                                </graphic>
+                            </Button>
+                            <Button fx:id="btnBottom" contentDisplay="TOP" mnemonicParsing="false" onKeyPressed="#onHandleKeyPressed" onMouseClicked="#mouceClickedAction" prefHeight="78.0" text="Bottom">
+                                <graphic>
+                                    <ImageView fx:id="bottomIcon" fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                                    </ImageView>
+                                </graphic>
+                            </Button>
+                            <Button fx:id="btnAll" contentDisplay="TOP" mnemonicParsing="false" onKeyPressed="#onHandleKeyPressed" onMouseClicked="#mouceClickedAction" prefHeight="78.0" text="All">
+                                <graphic>
+                                    <ImageView fx:id="AllIcon" fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                                    </ImageView>
+                                </graphic>
+                            </Button>
+                            <Button fx:id="btnGame" contentDisplay="TOP" mnemonicParsing="false" onKeyPressed="#onHandleKeyPressed" onMouseClicked="#mouceClickedAction" prefHeight="78.0" text="Game">
+                                <graphic>
+                                    <ImageView fx:id="GameIcon" fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                                    </ImageView>
+                                </graphic>
+                            </Button>
+                            <Button fx:id="btnFree" contentDisplay="TOP" mnemonicParsing="false" onKeyPressed="#onHandleKeyPressed" onMouseClicked="#mouceClickedAction" prefHeight="78.0" text="Free">
+                                <graphic>
+                                    <ImageView fx:id="FreeIcon" fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                                    </ImageView>
+                                </graphic>
+                            </Button>
+                            <VBox prefHeight="79.0">
+                                <children>
+                                    <Button fx:id="level1" mnemonicParsing="false" onKeyPressed="#onHandleKeyPressed" onMouseClicked="#mouceClickedAction" style="-fx-font-size: 15;" text="Level 1">
+                                        <graphic>
+                                            <ImageView fx:id="level1Icon" fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                                            </ImageView>
+                                        </graphic>
+                                    </Button>
+                                    <Button fx:id="level2" mnemonicParsing="false" onKeyPressed="#onHandleKeyPressed" onMouseClicked="#mouceClickedAction" style="-fx-font-size: 15;" text="Level 2">
+                                        <graphic>
+                                            <ImageView fx:id="level2Icon" fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                                            </ImageView>
+                                        </graphic>
+                                    </Button>
+                                    <Button fx:id="level3" mnemonicParsing="false" onKeyPressed="#onHandleKeyPressed" onMouseClicked="#mouceClickedAction" style="-fx-font-size: 15;" text="Level 3">
+                                        <graphic>
+                                            <ImageView fx:id="level3Icon" fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                                            </ImageView>
+                                        </graphic>
+                                    </Button>
+                                </children>
+                            </VBox>
+                     <VBox maxHeight="78.0" style="-fx-background-color: lavender;" HBox.hgrow="ALWAYS">
+                        <children>
+                           <HBox prefHeight="100.0" prefWidth="200.0">
+                              <children>
+                                 <Button fx:id="btnNepali" mnemonicParsing="false" onKeyPressed="#onHandleKeyPressed" onMouseClicked="#mouceClickedAction" style="-fx-font-size: 16;" text="Nepali">
+                                     <graphic>
+                                         <ImageView fx:id="npflag" fitHeight="34.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                                         </ImageView>
+                                     </graphic>
+                                 </Button>
+                                 <Button fx:id="btnEnglish" mnemonicParsing="false" onKeyPressed="#onHandleKeyPressed" onMouseClicked="#mouceClickedAction" style="-fx-font-size: 16;" text="English"><graphic>
+                                     <ImageView fx:id="Enflag" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                     </ImageView>
+                                 </graphic>
+                                 </Button>
+                                 <BorderPane prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
+                                    <center>
+                                       <Label style="-fx-font-size: 17; -fx-background-color: white;" text="By: Abdhesh Nayak" textFill="#42269e" BorderPane.alignment="CENTER" />
+                                    </center>
+                                    <bottom>
+                                       <Label style="-fx-background-color: white;-fx-font-size: 16;" text="Last Updated : 2019/06/12" BorderPane.alignment="CENTER" />
+                                    </bottom>
+                                 </BorderPane>
+                              </children>
+                           </HBox>
+                           <VBox prefHeight="200.0" prefWidth="100.0">
+                              <children>
+                                 <HBox prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                                    <children>
+                                       <ImageView fx:id="userIcon" fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true" />
+                                       <VBox prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+                                          <children>
+                                             <HBox prefHeight="100.0" prefWidth="200.0">
+                                                <children>
+                                                   <Label style="-fx-font-size: 17;" text=" Name : " />
+                                                   <Label fx:id="userNameLabel" style="-fx-font-size: 17;" text="Alex Pardian" />
+                                                </children>
+                                             </HBox>
+                                             <HBox>
+                                                <children>
+                                                   <BorderPane HBox.hgrow="ALWAYS">
+                                                      <left>
+                                                         <HBox BorderPane.alignment="CENTER">
+                                                            <children>
+                                                               <Label style="-fx-font-size: 18;" text=" Avg Speed : " />
+                                                               <Label style="-fx-font-size: 18;" text="33" />
+                                                            </children>
+                                                         </HBox>
+                                                      </left>
+                                                      <right>
+                                                         <HBox nodeOrientation="LEFT_TO_RIGHT" BorderPane.alignment="TOP_LEFT">
+                                                            <children>
+                                                               <Label style="-fx-font-size: 18;" text="Hi Sc: " />
+                                                               <Label style="-fx-font-size: 18;" text="Abdhesh">
+                                                                  <HBox.margin>
+                                                                     <Insets left="5.0" right="5.0" />
+                                                                  </HBox.margin>
+                                                               </Label>
+                                                               <Label style="-fx-font-size: 18;" text="33">
+                                                                  <HBox.margin>
+                                                                     <Insets bottom="5.0" right="5.0" />
+                                                                  </HBox.margin>
+                                                               </Label>
+                                                            </children>
+                                                         </HBox>
+                                                      </right>
+                                                   </BorderPane>
+                                                </children>
+                                             </HBox>
+                                          </children>
+                                       </VBox>
+                                    </children>
+                                 </HBox>
+                              </children>
+                           </VBox>
+                        </children>
+                     </VBox>
+                        </children>
+                    </HBox>
+                </top>
+                <center>
+                    <VBox alignment="BOTTOM_CENTER" prefHeight="313.0" prefWidth="902.0" BorderPane.alignment="CENTER">
+                        <children>
+                            <Label fx:id="taskuser" style="-fx-font-size: 26;" text="Usr Needed To Type" textFill="#2904ff" />
+                     <HBox alignment="TOP_CENTER" prefHeight="23.0" prefWidth="902.0">
+                        <children>
+                           <Label fx:id="userinput1" style="-fx-font-size: 26;" />
+                           <Label fx:id="userinput3" style="-fx-font-size: 26;" textFill="#e10a0a" />
+                           <Label fx:id="userinput2" style="-fx-font-size: 26;" textFill="WHITE" />
+                        </children>
+                     </HBox>
+                        </children>
+                    </VBox>
+                </center>
+            <bottom>
+               <WebView fx:id="webopen" maxWidth="960.0" prefHeight="399.0" prefWidth="600.0" BorderPane.alignment="BOTTOM_CENTER" />
+            </bottom>
+            </BorderPane>
+        </children>
+    </VBox>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>

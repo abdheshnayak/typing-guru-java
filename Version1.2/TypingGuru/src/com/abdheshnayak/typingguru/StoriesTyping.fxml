@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.web.WebView?>
+
+<GridPane fx:id="MainGridPane" alignment="center" hgap="10" onKeyPressed="#onHandleKeyPressed" style="-fx-background-color:white;" vgap="10" xmlns="http://javafx.com/javafx/8.0.211" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.abdheshnayak.typingguru.StoriesTyping">
+<VBox prefHeight="776.0" prefWidth="1410.0">
+    <children>
+         <BorderPane>
+            <center>
+               <HBox alignment="CENTER" prefHeight="90.0" prefWidth="1179.0" BorderPane.alignment="CENTER">
+                  <children>
+                     <Label alignment="CENTER" text="Stories Typing">
+                        <textFill>
+                           <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                              <stops>
+                                 <Stop color="RED" />
+                                 <Stop color="#610eae" offset="1.0" />
+                              </stops>
+                           </RadialGradient>
+                        </textFill>
+                        <font>
+                           <Font size="43.0" />
+                        </font>
+                     </Label>
+                  </children>
+               </HBox>
+            </center>
+            <left>
+               <HBox alignment="CENTER" BorderPane.alignment="CENTER">
+                  <children>
+                     <Label fx:id="userNameLabel" text="Label" />
+                  </children>
+                  <BorderPane.margin>
+                     <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                  </BorderPane.margin>
+               </HBox>
+            </left>
+            <right>
+               <HBox alignment="CENTER" minWidth="150.0" BorderPane.alignment="CENTER">
+                  <children>
+                     <Label text="" />
+                     <Label fx:id="userSpeed" text="" />
+                  </children>
+                  <BorderPane.margin>
+                     <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                  </BorderPane.margin>
+               </HBox>
+            </right>
+         </BorderPane>
+        <BorderPane prefHeight="499.0" prefWidth="902.0" VBox.vgrow="ALWAYS">
+            <bottom>
+                <WebView fx:id="webopen" maxWidth="960.0" minHeight="460.0" prefHeight="399.0" prefWidth="600.0" BorderPane.alignment="BOTTOM_CENTER" />
+            </bottom>
+            <top>
+               <WebView fx:id="toTypeViewLayoutWebView" maxHeight="270.0" maxWidth="900.0" minHeight="250.0" minWidth="800.0" prefHeight="270.0" prefWidth="-1.0" BorderPane.alignment="CENTER" />
+            </top>
+        </BorderPane>
+    </children>
+</VBox>
+<columnConstraints>
+    <ColumnConstraints />
+</columnConstraints>
+<rowConstraints>
+    <RowConstraints />
+</rowConstraints>
+</GridPane>

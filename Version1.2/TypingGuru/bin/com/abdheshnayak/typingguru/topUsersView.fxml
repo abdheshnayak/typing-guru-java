@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.abdheshnayak.typingguru.topUsersView">
+   <top>
+      <Label text="Top Users" textFill="#370ada" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="21.0" />
+         </font>
+         <BorderPane.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </BorderPane.margin>
+      </Label>
+   </top>
+   <bottom>
+      <Button mnemonicParsing="false" text="Close" fx:id="closebtn" onAction="#handleclosebtn" textFill="#a81313" BorderPane.alignment="BOTTOM_RIGHT">
+         <BorderPane.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </BorderPane.margin>
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+   </bottom>
+   <center>
+      <TableView fx:id="tableview" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="tName" maxWidth="4000.0" minWidth="-1.0" prefWidth="451.0" text="Name" />
+          <TableColumn fx:id="tScore" maxWidth="258.0" minWidth="100.0" prefWidth="127.0" text="Score" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+         <BorderPane.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </BorderPane.margin>
+      </TableView>
+   </center>
+</BorderPane>

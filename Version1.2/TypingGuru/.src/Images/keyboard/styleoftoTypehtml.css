@@ -1,0 +1,19 @@
+@import 'Fonts/tempStylesheet.css';
+
+::selection{background-color:none; color:inherit;}
+
+body{
+  background-color:white;
+}
+.keyboard{
+  width:860px;
+  min-height: 200px;
+  /* background-color: #c3e9c6; */
+
+  background-color: #bdbfbd;
+  margin: 0px auto;
+  border-radius: 9px;
+  padding: 5px;
+  color: black;
+  border: 3px solid tomato;
+}

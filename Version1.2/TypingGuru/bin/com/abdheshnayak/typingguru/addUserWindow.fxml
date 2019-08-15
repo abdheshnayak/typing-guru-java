@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+
+<DialogPane fx:id="addNewUserDialog" minHeight="300.0" minWidth="500.0" style="-fx-background-color: pink;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.abdheshnayak.typingguru.addUserClass">
+   <header>
+      <Label fx:id="headLabel" alignment="CENTER" contentDisplay="CENTER" style="-fx-font-size: 25;" text="Add User">
+         <textFill>
+            <RadialGradient centerX="0.6292134831460674" centerY="0.46634615384615385" focusAngle="-150.95" radius="0.47619047619047616">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="#0304ff" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill></Label>
+   </header>
+   <content>
+      <GridPane>
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <TextField fx:id="nameField" promptText="Your Name" style="-fx-font-size: 18;" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS" />
+            <PasswordField fx:id="password" promptText="Password" style="-fx-font-size: 18;" GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS" />
+            <Label style="-fx-font-size: 18;" text="Name :" />
+            <Label style="-fx-font-size: 18;" text="Password :" GridPane.rowIndex="1" />
+            <Label style="-fx-font-size: 18;" text="Confirm Password" GridPane.rowIndex="2" />
+            <PasswordField fx:id="password1" promptText="Confirm Password" style="-fx-font-size: 18;" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+         </children>
+      </GridPane>
+   </content>
+</DialogPane>

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.web.WebView?>
+
+<GridPane fx:id="MainGridPane" alignment="center" hgap="10" style="-fx-background-color:white;" vgap="10" xmlns="http://javafx.com/javafx/8.0.211" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.abdheshnayak.typingguru.MainWindowController">
+    <VBox prefHeight="776.0" prefWidth="1410.0" style="-fx-font-size: 20;-fx-background-color: white;" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS">
+        <children>
+            <MenuBar VBox.vgrow="NEVER">
+                <menus>
+                    <Menu mnemonicParsing="false" text="File">
+                        <items>
+                            <MenuItem fx:id="quite" mnemonicParsing="false" onAction="#QuiteAction" text="Quit" />
+                        </items>
+                    </Menu>
+                    <Menu mnemonicParsing="false" text="About">
+                        <items>
+                            <MenuItem mnemonicParsing="false" fx:id="aboutAppbtn" onAction="#AboutAppFun" text="About TypingGuru" />
+                        </items>
+                    </Menu>
+                </menus>
+            </MenuBar>
+            <BorderPane prefHeight="499.0" prefWidth="902.0" VBox.vgrow="ALWAYS">
+                <top>
+                    <HBox prefHeight="78.0" BorderPane.alignment="CENTER">
+                        <children>
+                            <Button fx:id="btnHome" contentDisplay="TOP" mnemonicParsing="false" onKeyPressed="#onHandleKeyPressed" onMouseClicked="#mouceClickedAction" prefHeight="100.0" text="Home" HBox.hgrow="ALWAYS">
+                                <graphic>
+                                    <ImageView fx:id="HomeIcon" fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                                    </ImageView>
+                                </graphic>
+                            </Button>
+                     <Button fx:id="btnAddUser" contentDisplay="TOP" mnemonicParsing="false" onKeyPressed="#onHandleKeyPressed" onMouseClicked="#mouceClickedAction" prefHeight="100.0" text="Add User" HBox.hgrow="ALWAYS">
+                        <graphic>
+                           <ImageView fx:id="adduserIcon" fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true" />
+                        </graphic>
+                     </Button>
+                            <Button fx:id="btnTop" contentDisplay="TOP" mnemonicParsing="false" onKeyPressed="#onHandleKeyPressed" onMouseClicked="#mouceClickedAction" prefHeight="100.0" text="Top" HBox.hgrow="ALWAYS">
+                                <graphic>
+                                    <ImageView fx:id="topicon" fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                                    </ImageView>
+                                </graphic>
+                            </Button>
+                            <Button fx:id="btnBottom" contentDisplay="TOP" mnemonicParsing="false" onKeyPressed="#onHandleKeyPressed" onMouseClicked="#mouceClickedAction" prefHeight="100.0" text="Bottom" HBox.hgrow="ALWAYS">
+                                <graphic>
+                                    <ImageView fx:id="bottomIcon" fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                                    </ImageView>
+                                </graphic>
+                            </Button>
+                            <Button fx:id="btnStories" contentDisplay="TOP" mnemonicParsing="false" onKeyPressed="#onHandleKeyPressed" onMouseClicked="#mouceClickedAction" prefHeight="100.0" text="Stories" HBox.hgrow="ALWAYS">
+                                <graphic>
+                                    <ImageView fx:id="StoriesIcon" fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                                    </ImageView>
+                                </graphic>
+                            </Button>
+                            <Button fx:id="btnFree" contentDisplay="TOP" mnemonicParsing="false" onKeyPressed="#onHandleKeyPressed" onMouseClicked="#mouceClickedAction" prefHeight="100.0" text="Free" HBox.hgrow="ALWAYS">
+                                <graphic>
+                                    <ImageView fx:id="FreeIcon" fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                                    </ImageView>
+                                </graphic>
+                            </Button>
+                            <VBox prefHeight="79.0">
+                                <children>
+                                    <Button fx:id="level1" minHeight="33.0" mnemonicParsing="false" onKeyPressed="#onHandleKeyPressed" onMouseClicked="#mouceClickedAction" prefHeight="30.0" style="-fx-font-size: 15;" text="Level 1">
+                                        <graphic>
+                                            <ImageView fx:id="level1Icon" fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                                            </ImageView>
+                                        </graphic>
+                                    </Button>
+                                    <Button fx:id="level2" minHeight="33.0" mnemonicParsing="false" onKeyPressed="#onHandleKeyPressed" onMouseClicked="#mouceClickedAction" prefHeight="30.0" style="-fx-font-size: 15;" text="Level 2">
+                                        <graphic>
+                                            <ImageView fx:id="level2Icon" fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                                            </ImageView>
+                                        </graphic>
+                                    </Button>
+                                    <Button fx:id="level3" minHeight="33.0" mnemonicParsing="false" onKeyPressed="#onHandleKeyPressed" onMouseClicked="#mouceClickedAction" style="-fx-font-size: 15;" text="Level 3">
+                                        <graphic>
+                                            <ImageView fx:id="level3Icon" fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                                            </ImageView>
+                                        </graphic>
+                                    </Button>
+                                </children>
+                            </VBox>
+                     <VBox minWidth="-Infinity" prefHeight="99.0" prefWidth="560.0" style="-fx-background-color: lavender;" HBox.hgrow="ALWAYS">
+                        <children>
+                           <HBox prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                              <children>
+                                 <ChoiceBox fx:id="LanguageSelector" onAction="#LanguageController" prefWidth="200.0" style="-fx-border-color: green;" />
+                                 <BorderPane HBox.hgrow="ALWAYS">
+                                    <center>
+                                       <Label fx:id="DevLevel" style="-fx-font-size: 17; -fx-background-color: white;" text="By: Abdhesh Nayak" textFill="#42269e" BorderPane.alignment="CENTER" />
+                                    </center>
+                                    <bottom>
+                                       <Label style="-fx-background-color: white;-fx-font-size: 16;" text="Last Updated : 2019/08/10" BorderPane.alignment="CENTER" />
+                                    </bottom>
+                                 </BorderPane>
+                              </children>
+                           </HBox>
+                           <VBox>
+                              <children>
+                                 <HBox prefHeight="34.0" prefWidth="699.0" VBox.vgrow="ALWAYS">
+                                    <children>
+                                       <ImageView fx:id="userIcon" fitHeight="35.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" />
+                                       <VBox HBox.hgrow="ALWAYS">
+                                          <children>
+                                             <HBox>
+                                                <children>
+                                                   <Label style="-fx-font-size: 17;" text=" Name : " />
+                                                   <Label fx:id="userNameLabel" style="-fx-font-size: 17;" text="Alex Pardian" />
+                                                </children>
+                                             </HBox>
+                                             <HBox>
+                                                <children>
+                                                   <BorderPane HBox.hgrow="ALWAYS">
+                                                      <left>
+                                                         <HBox BorderPane.alignment="CENTER">
+                                                            <children>
+                                                               <Label style="-fx-font-size: 18;" text=" Avg Speed : " />
+                                                               <Label fx:id="speedLabel" style="-fx-font-size: 18;" text="33" />
+                                                            </children>
+                                                         </HBox>
+                                                      </left>
+                                                      <right>
+                                                         <HBox nodeOrientation="LEFT_TO_RIGHT" BorderPane.alignment="TOP_LEFT">
+                                                            <children>
+                                                               <Label style="-fx-font-size: 18;" text="Hi Sc: " />
+                                                               <Label fx:id="highScoreLablename" style="-fx-font-size: 18;" text="Abdhesh">
+                                                                  <HBox.margin>
+                                                                     <Insets left="5.0" right="5.0" />
+                                                                  </HBox.margin>
+                                                               </Label>
+                                                               <Label fx:id="highScoreLable" style="-fx-font-size: 18;" text="33">
+                                                                  <HBox.margin>
+                                                                     <Insets bottom="5.0" right="5.0" />
+                                                                  </HBox.margin>
+                                                               </Label>
+                                                            </children>
+                                                         </HBox>
+                                                      </right>
+                                                      <center>
+                                                         <HBox alignment="CENTER" BorderPane.alignment="CENTER">
+                                                            <children>
+                                                               <Label text="Timer:" textFill="#f50000" />
+                                                               <Label fx:id="timerLabel" text="0" />
+                                                            </children>
+                                                         </HBox>
+                                                      </center>
+                                                   </BorderPane>
+                                                </children>
+                                             </HBox>
+                                          </children>
+                                       </VBox>
+                                    </children>
+                                 </HBox>
+                              </children>
+                           </VBox>
+                        </children>
+                     </VBox>
+                        </children>
+                    </HBox>
+                </top>
+            <bottom>
+               <WebView fx:id="webopen" maxWidth="960.0" minHeight="550.0" prefHeight="399.0" prefWidth="600.0" BorderPane.alignment="BOTTOM_CENTER" />
+            </bottom>
+            </BorderPane>
+        </children>
+    </VBox>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>
