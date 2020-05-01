@@ -79,6 +79,11 @@ if your system have installed JRE 1.8 then don't download the installer file. Ju
 * [JavaFx](https://docs.oracle.com/javafx/2/overview/jfxpub-overview.htm) - JavaFX is a set of graphics and media packages that enables developers to design, create, test, debug, and deploy rich client applications that operate consistently across diverse platforms.
 * [HTML](https://devdocs.io/html/),[CSS](https://devdocs.io/css/) - Used to Design The Screens.
 
+## LICENSE
+
+This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) file for details
+
+
 ## Authors
 
 * **Abdhesh Nayak** - [Github](https://github.com/abdheshnayak), [LinkedIn](https://www.linkedin.com/in/abdhesh-nayak/)
