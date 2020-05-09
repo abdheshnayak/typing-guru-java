@@ -1,4 +1,5 @@
 
+![post date](https://img.shields.io/badge/Posted-8%20May%202020-lightgrey) ![Views](https://img.shields.io/endpoint?url=https://pageviewcounter.000webhostapp.com/?ID=kamla_com_np_typingguru)
 # Typing Guru
 
 Best way to sharp your typing skill.
@@ -7,8 +8,8 @@ Best way to sharp your typing skill.
 
 ## Getting Started
 
-Typing Guru is an alternative to Nepali Typeshala software but in diffrent Languages. Typing Guru is the typing Tutor Software for those who want to Learn Typing from starting. It helps in speed building, improves typing accuracy and hence makes more productive. It Monitors your Tying speed that is word per minute and accuracy percentage after completion of each lesson.
-Typing Guru is available for Linux and windows. This Typing tutor supports different languages, hence you can type in Nepali, Hindi, English, Tamil, Punjabi, Urdu, Bengali, Marathi and Telugu. In typing guru you can change the time for a particular lesson or the entire lesson by one button click, varying from 5 minutes to 30 minutes. Thus helps the user to apply more time to a particular lesson or all the lessons.
+Typing Guru is an alternative to Nepali Typeshala software but in different languages. Typing Guru is the typing Tutor Software for those who want to Learn Typing from starting. It helps in speed building, improves typing accuracy, and hence makes more productive. It Monitors your Tying speed that is word per minute and accuracy percentage after completion of each lesson.
+Typing Guru is available for Linux and windows. This Typing tutor supports different languages, hence you can type in Nepali, Hindi, English, Tamil, Punjabi, Urdu, Bengali, Marathi, and Telugu. In typing guru you can change the time for a particular lesson or the entire lesson by one button click, varying from 5 minutes to 30 minutes. Thus helps the user to apply more time to a particular lesson or all the lessons.
 It is highly recommended to complete all the lessons before beginning with games as this is the core for learning touch typing correctly while the type games are the place to implement it. Fun is an essential element for educational practice and therefore there’s no need to get too strict with these guidelines. Just enjoy each of the free typing games. Remember, from time to time, to take a typing test and compare it to your previous result. Besides the encouragement, monitoring your progress is also important to point out your weaknesses points.
 
 This software is a fully free and open source you can use it freely and also you can modify according to your needs.
@@ -29,10 +30,10 @@ don't forget to put a pull request after any major update done by you.
 - Easy to install.
 - Easy to learn typing.
 - Free software.
-- Bug free.
+- Bug-free.
 - Numbers of lessons.
 - Regular updates.
-- Available in windows and Linux both platform.
+- Available in Windows and Linux both platforms.
 - Small in size.
 - Hindi typing available.
 - Nepali typing available.
@@ -44,7 +45,7 @@ don't forget to put a pull request after any major update done by you.
 - More Typing Languages Can be added according to your requests.
 
 ### Prerequisites
-This application is built for Windows, Linux and Mac so if you have such a device then you can use this software.
+This application is built for Windows, Linux, and Mac so if you have such a device then you can use this software.
 To install the software you need one of the given operating systems:
 1. Windows
 2. Linux
