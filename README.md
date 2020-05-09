@@ -1,10 +1,9 @@
+
 # Typing Guru
 
 Best way to sharp your typing skill.
 
-![Image of the Main Screen](1.png)
-![Image of the Main Screen](2.png)
-![Image of the Main Screen](3.png)
+![Image of the Main Screen](https://github.com/abdheshnayak/TypingGuru/raw/master/1.png)
 
 ## Getting Started
 
@@ -45,7 +44,6 @@ don't forget to put a pull request after any major update done by you.
 - More Typing Languages Can be added according to your requests.
 
 ### Prerequisites
-
 This application is built for Windows, Linux and Mac so if you have such a device then you can use this software.
 To install the software you need one of the given operating systems:
 1. Windows
@@ -55,17 +53,20 @@ To install the software you need one of the given operating systems:
 Or You can Run also another Operating System which supports(installed) JRE 1.8.
 
 ### Installing
-<dl>
+- <dl>
   <dt>Windows</dt>
   <dd>You can use this software in windows by simply installing the installer package. The installer package you can get from the following link:<br><a href="ourceforge.net/projects/typingguru/">Typing Guru</a><br>
-After downloading from the given link you can simply install and then you can start your application.
+	
+	After downloading from the given link you can simply install and then you can start your application.
 </dd>
-  <dt>Linux</dt>
+
+- <dt>Linux</dt>
   <dd>You can use this software in Linux by simply extracting the source file and double-clicking on the executable file named as TypingGuru. You can get the source from the following link:<br><a href="ourceforge.net/projects/typingguru/">Typing Guru</a><br>
 </dd>
-  <dt>Mac Os or Others</dt>
+  
+- <dt>Mac Os or Others</dt>
   <dd>
-if your system have installed JRE 1.8 then don't download the installer file. Just download the jar executable by the following link and you can run it in your system directly by executing the jar file. <br>
+	if your system have installed JRE 1.8 then don't download the installer file. Just download the jar executable by the following link and you can run it in your system directly by executing the jar file. <br>
     <a href="https://sourceforge.net/projects/typingguru/files/VERSION_1.2/TypingGuru 1.2 (jar).zip/download">TypingGuru Jar file</a>
     </dd>
 </dl>
@@ -81,11 +82,11 @@ if your system have installed JRE 1.8 then don't download the installer file. Ju
 
 ## LICENSE
 
-This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) file for details
-
+This project is licensed under the Apache License 2.0 - see the [LICENSE]([https://github.com/abdheshnayak/TypingGuru/blob/master/LICENSE](https://github.com/abdheshnayak/TypingGuru/blob/master/LICENSE)) file for details
 
 ## Authors
+>**Abdhesh Nayak**
 
-* **Abdhesh Nayak** - [Github](https://github.com/abdheshnayak), [LinkedIn](https://www.linkedin.com/in/abdhesh-nayak/)
+[![Icon](https://img.shields.io/badge/Github-lightgrey)](https://github.com/abdheshnayak) [![Icon](https://img.shields.io/badge/LinkedIn-blue)](https://www.linkedin.com/in/abdhesh-nayak/)
 
-See also the list of [contributors](https://github.com/abdheshnayak/TypingGuru/contributors) who participated in this project.
+**See also the list of [Contributors](https://github.com/abdheshnayak/static-website-views-counter/contributors) who participated in this project.**
