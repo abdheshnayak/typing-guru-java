@@ -4,11 +4,11 @@ package com.abdheshnayak.typingguru;
 import com.abdheshnayak.typingguru.JavaClasses.fileReaderClass;
 import com.abdheshnayak.typingguru.JavaClasses.staticData;
 import com.abdheshnayak.typingguru.JavaClasses.tempDatas;
+import com.abdheshnayak.typingguru.keyboard_controller.keyboardController;
 import javafx.animation.Animation;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
 import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -19,16 +19,13 @@ import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
-import javafx.scene.web.WebEngine;
-import javafx.scene.web.WebView;
+import javafx.scene.layout.VBox;
+import javafx.scene.text.Text;
 import javafx.stage.Stage;
-import javafx.stage.WindowEvent;
 import javafx.util.Duration;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.util.HashMap;
 import java.util.Map;
 import java.util.Optional;
 
@@ -38,6 +35,11 @@ import static com.abdheshnayak.typingguru.JavaClasses.SorterClass.sortByComparat
 public class MainWindowController {
 
     public static Stage stage = new Stage();
+
+    @FXML
+    public keyboardController keyboardController;
+    public Text toType;
+    public Text youTyped;
     @FXML
     private MenuItem aboutAppbtn;
 
@@ -74,8 +76,6 @@ public class MainWindowController {
     @FXML
     private Button btnAddUser;
     @FXML
-    public WebView webopen;
-    @FXML
     private ImageView userIcon;
     @FXML
     private ImageView level1Icon;
@@ -83,10 +83,7 @@ public class MainWindowController {
     private ImageView level2Icon;
     @FXML
     private ImageView level3Icon;
-//    @FXML
-//    private ImageView AllIcon;
-//    @FXML
-//    private ImageView GameIcon;
+
     @FXML
     private ImageView FreeIcon;
     @FXML
@@ -95,41 +92,22 @@ public class MainWindowController {
     private ImageView topicon;
     @FXML
     private ImageView HomeIcon;
-//    @FXML
-//    private ImageView npflag;
-//    @FXML
-//    private ImageView Enflag;
-//    @FXML
-//    private Label userinput1;
-//    @FXML
-//    private Label userinput2;
-//    @FXML
-//    private Label userinput3;
-//    @FXML
-//    private Label taskuser;
+
     @FXML
     private Button btnNepali;
     @FXML
     private Button btnEnglish;
     private String task;
     private String taskC;
-//    @FXML
-//    private Button btnHome;
-//    @FXML
-//    private Button btnAll;
-//    @FXML
-//    private Button btnGame;
-//    @FXML
-//    private Button btnFree;
+
     @FXML
     private Button level1;
     @FXML
     private Button level2;
-    @FXML
-    private Map<String, Integer> keys = new HashMap<>();
+
     @FXML
     private Button level3;
-    private String tempKeyboard;
+
     private static tempDatas td=new tempDatas();
 
 
@@ -140,18 +118,10 @@ public class MainWindowController {
         userIcon.setImage(image);
 
 
-//        input = new FileInputStream(staticData.myDir+"/.src/Images/Icons/nepali-flag.png");
-//        image = new Image(input);
-//        npflag.setImage(image);
-
         input = new FileInputStream(staticData.myDir+"/.src/Images/Icons/usericon.png");
         image = new Image(input);
         adduserIcon.setImage(image);
 
-
-//        input = new FileInputStream(staticData.myDir+"/.src/Images/Icons/english-flag.png");
-//        image = new Image(input);
-//        Enflag.setImage(image);
 
         input = new FileInputStream(staticData.myDir+"/.src/Images/Icons/home.png");
         image = new Image(input);
@@ -170,9 +140,6 @@ public class MainWindowController {
         image = new Image(input);
         StoriesIcon.setImage(image);
 
-//        input = new FileInputStream(staticData.myDir+"/.src/Images/Icons/game.png");
-//        image = new Image(input);
-//        GameIcon.setImage(image);
 
         input = new FileInputStream(staticData.myDir+"/.src/Images/Icons/freeWriting.png");
         image = new Image(input);
@@ -190,13 +157,8 @@ public class MainWindowController {
         input = new FileInputStream(staticData.myDir+"/.src/Images/Icons/level3icon.png");
         image = new Image(input);
         level3Icon.setImage(image);
-        keyboardLoad();
     }
 
-    private   void keyboardLoad() {
-        WebEngine webEngine= webopen.getEngine();
-        webEngine.load(tempKeyboard);
-    }
 
     public void QuiteAction(ActionEvent actionEvent) {
 
@@ -209,11 +171,9 @@ public class MainWindowController {
 
         if(actionEvent.getSource().equals(LanguageSelector)) {
             staticData.unvLanguage=LanguageSelector.getValue().toString();
-            td.hw.ChangeLanguage(LanguageSelector.getValue().toString());
-            td.t.run();
-            keyboardLoad();
+            keyboardController.changeFont(LanguageSelector.getValue().toString());
+            changeFont(LanguageSelector.getValue().toString());
         }
-
     }
 
     public void AboutAppFun(ActionEvent actionEvent) throws IOException {
@@ -222,27 +182,25 @@ public class MainWindowController {
 
             FileInputStream input = new FileInputStream(staticData.myDir + "/.src/Images/Icons/DialogIcon.png");
             stage.getIcons().add(new Image(input));
-//                Stage stage = (Stage) btnBottom.getScene().getWindow();
             GridPane root;
-
 
             root = (GridPane) FXMLLoader.load(getClass().getResource("aboutApp.fxml"));
             Scene scene = new Scene(root, 960, 540);
             stage.setScene(scene);
 
-
             stage.showAndWait();
 
-
             td.dialogptr = true;
-
-
         }
     }
 
+    public void onHandleKeyReleased(KeyEvent keyEvent) {
+        keyboardController.clearAllTurned("redbg");
+    }
 
+
+//    BackGround Task
     public  class Backgrounds{
-
         public void go(){
             final Timeline timeline=new Timeline(
                     new KeyFrame(
@@ -250,11 +208,6 @@ public class MainWindowController {
                             event -> {
                                 if(staticData.tempSwitch){
                                     staticData.timerSeconds++;
-
-
-                                 //   timerLabel.setText(String.valueOf(staticData.timerSeconds));
-                                  //  System.out.println(k);
-
 
                                     int pt,second,minute;
                                     second=staticData.timerSeconds;
@@ -265,13 +218,11 @@ public class MainWindowController {
 
                                     timerLabel.setText(" "+minute+" : "+second);
 
-
                                     float tend,diff;
                                     int fspeed;
                                     tend=staticData.timerSeconds;
                                     diff=tend/td.spaceCounter;
-                                   // difrnc=difftime(tend,tstart);
-//                                    System.out.println("tend: "+tend+" diff :"+diff+" Space Counter :"+td.spaceCounter);
+
                                     fspeed=(int)(60/diff);
 
                                     speedLabel.setText(String.valueOf(fspeed));
@@ -296,6 +247,11 @@ public class MainWindowController {
     }
 
 
+    public void keyboardLoad(){
+        String  ch = td.lsn.substring(td.cursorPointer,td.cursorPointer+1);
+        keyboardController.turnKeyOn(ch,"greenbg");
+//        System.out.println(lsnparts[td.cursorPointer]);
+    }
 
     public void initializeHelper() throws IOException, ClassNotFoundException {
 
@@ -315,8 +271,6 @@ public class MainWindowController {
         Backgrounds backgrounds=new Backgrounds();
         backgrounds.go();
 
-        td.t= new Thread(td.hw);
-
         userNameLabel.setText(staticData.usrname);
 
         String filename ;
@@ -333,18 +287,13 @@ public class MainWindowController {
             td.tempString=td.tempString+lsnparts[i];
         }
         task=td.toPrint;
-//        taskuser.setText(td.toPrint);
-//        userinput1.setText("_");
-//        userinput2.setText(td.tempString);
+
         td.temp1=td.toPrint.split("");
-        taskC="_";
-//        System.out.println(taskC);
-        keys.clear();
-        keys.put(td.temp1[td.cursorPointer],1);
-        td.hw.write(keys,task,taskC);
-        td.t.run();
+        taskC="";
+        toType.setText(task);
+        youTyped.setText(taskC);
 
-
+        keyboardLoad();
     }
 
 
@@ -352,11 +301,7 @@ public class MainWindowController {
 
         td.addLessons();
 
-
-
-
         DevLevel.setText("By: Abdhesh Nayak");
-        tempKeyboard="file://"+staticData.myDir+"/.src/Images/keyboard/tempKeyboard.html";
 
         td.user.readUsers();
         if(!td.user.usrdata.Score.containsKey(staticData.usrname)){
@@ -374,7 +319,6 @@ public class MainWindowController {
         Backgrounds backgrounds=new Backgrounds();
         backgrounds.go();
 
-        td.t= new Thread(td.hw);
 
         userNameLabel.setText(staticData.usrname);
 
@@ -392,16 +336,13 @@ public class MainWindowController {
             td.tempString=td.tempString+lsnparts[i];
         }
         task=td.toPrint;
-//        taskuser.setText(td.toPrint);
-//        userinput1.setText("_");
-//        userinput2.setText(td.tempString);
+
         td.temp1=td.toPrint.split("");
-        taskC="_";
-//        System.out.println(taskC);
-        keys.clear();
-        keys.put(td.temp1[td.cursorPointer],1);
-        td.hw.write(keys,task,taskC);
-        td.t.run();
+        taskC="";
+        toType.setText(task);
+        youTyped.setText(taskC);
+        keyboardLoad();
+
         setImageFun();
 
         LanguageSelector.getItems().clear();
@@ -417,28 +358,20 @@ public class MainWindowController {
 
     public void onHandleKeyPressed(KeyEvent keyEvent) throws IOException{
         int x;
+//        keyboardController.onHandleKeyPressed(keyEvent);
         try {
-            x= (int) keyEvent.getText().charAt(0);
-        }catch (Exception e){
-            keys.clear();
-            keys.put(keyEvent.getCode().toString(),2);
-            keys.put(td.temp1[0],1);
-            td.hw.write(keys,task,taskC);
-            td.t.run();
-            keyboardLoad();
+            x = (int) keyEvent.getText().charAt(0);
+//            keyboardController.turnKeyOn(keyEvent.getText(), "redbg");
+        } catch (Exception e) {
+            keyboardController.turnKeyOn(keyEvent.getCode().toString(), "redbg");
             return;
         }
 
         if(x==8 ||x==127||x==16||(keyEvent.getText().equals("CAPS"))||(keyEvent.getText().equals("ESCAPE")))
         {
-            keys.clear();
-            keys.put(keyEvent.getCode().toString(),2);
-            keys.put(td.temp1[td.cursorPointer],1);
-            td.hw.write(keys,task,taskC);
-            td.t.run();
-            keyboardLoad();
             return;
         }
+
         String[] lsnparts= td.lsn.split("");
         String tempStr;
         tempStr=keyEvent.getText();
@@ -455,94 +388,37 @@ public class MainWindowController {
             }
             //td.spaceCounter++;
             td.toPrint="";
-            if(td.cursorPointer==td.lsn.length()){
-                td.lsnNext();
-            }
+
             td.cursorPointer++;
-            if(td.cursorPointer%20==0) {
+
+            if(td.cursorPointer+20 > td.lsn.length()-1){
+                td.lsnNext();
+                td.cursorPointer = 0;
+                td.lstcursorPointer = 0;
+                td.toPrint = td.lsn.substring(td.cursorPointer,td.cursorPointer+20);
+                toType.setText(td.toPrint);
+                td.toPrint = td.lsn.substring(0,1);
+
+            }else if(td.cursorPointer%20==0) {
                 td.lstcursorPointer=td.cursorPointer;
-                for (int i = td.cursorPointer; i < td.cursorPointer + 20; i++) {
-                    td.toPrint = td.toPrint + lsnparts[i];
-                }
+                td.toPrint = td.lsn.substring(td.cursorPointer,td.cursorPointer+20);
+
                 task=td.toPrint;
-//                taskuser.setText(td.toPrint);
+                toType.setText(task);
+
             }
 
             td.toPrint= "";
             for (int i = td.lstcursorPointer; i < td.cursorPointer; i++) {
                 td.toPrint = td.toPrint + lsnparts[i];
             }
-            td.toPrint=td.toPrint+"_";
+            td.toPrint=td.toPrint+"";
             taskC=td.toPrint;
-//            userinput1.setText(td.toPrint);
-
-            td.toPrint= "";
-            for (int i = td.cursorPointer; i < td.lstcursorPointer+20; i++) {
-                td.toPrint = td.toPrint + lsnparts[i];
-            }
-            td.tempString="";
-            for (int i = td.cursorPointer+1; i < td.lstcursorPointer+20; i++) {
-                td.tempString=td.tempString + lsnparts[i];
-            }
-//            userinput2.setText(td.tempString);
-            td.temp1=td.toPrint.split("");
-
-            if(td.temp1[0].equals(" ")){
-                td.temp1[0]="SPACE";
-            }
-
-            keys.clear();
-            keys.put(tempStr,0);
-            keys.put(td.temp1[0],1);
-
-            td.hw.write(keys,task,taskC);
-            td.t.run();
-
-            keyboardLoad();
-
+            youTyped.setText(taskC);
+            keyboardController.turnKeyOn(td.lsn.substring(td.cursorPointer,td.cursorPointer+1),"greenbg");
         }
         else {
-            td.toPrint= "";
-            for (int i = td.lstcursorPointer; i < td.cursorPointer; i++) {
-                td.toPrint = td.toPrint + lsnparts[i];
-            }
-            td.toPrint=td.toPrint+"_";
-//            userinput1.setText(td.toPrint);
-
-            taskC=td.toPrint;
-            String temp;
-            temp= tempStr;
-
-            switch (keyEvent.getCode().toString()){
-                case "ESCAPE":
-                    temp="ESCAPE";
-                    break;
-                case "SPACE":
-                    temp="SPACE";
-                    break;
-                case "ENTER":
-                    temp="ENTER";
-                    break;
-                case "BACK_SPACE":
-                    temp="BACK_SPACE";
-                    break;
-                case "TAB":
-                    temp="TAB";
-
-            }
-
-            keys.clear();
-            keys.put(temp,2);
-            keys.put(td.temp1[0],1);
-            td.hw.write(keys,task,taskC);
-            td.t.run();
-            keyboardLoad();
-
-            td.toPrint= "";
-            for (int i = td.cursorPointer+1; i < td.lstcursorPointer+20; i++) {
-                td.toPrint = td.toPrint + lsnparts[i];
-            }
-//            userinput2.setText(td.toPrint);
+            keyboardController.turnKeyOn(keyEvent.getText(),"redbg");
         }
     }
 
@@ -552,7 +428,8 @@ public class MainWindowController {
         staticData.timerSeconds=0;
         td.spaceCounter=0;
 
-            String filename ;
+        String filename ;
+
         filename = staticData.myDir+"/.src/lesson/"+td.lsnlist.get(0);
         if(mouseEvent.getSource().equals(level1)) {
             filename = staticData.myDir+"/.src/lesson/"+td.lsnlist.get(0);
@@ -563,27 +440,18 @@ public class MainWindowController {
 
         }else if(mouseEvent.getSource().equals(btnNepali)){
 //            td.cursorPointer=0;
-            WebEngine webEngine= webopen.getEngine();
             staticData.keyBoardType=false;
 
             staticData.unvLanguage=LanguageSelector.getValue().toString();
-            td.hw.ChangeLanguage(LanguageSelector.getValue().toString());
-//            td.hw.run();
-//            webEngine.load("file://"+staticData.myDir+"/.src/Images/keyboard/tempKeyboard.html");
-//
+
 //            return;
         }else if(mouseEvent.getSource().equals(btnEnglish)) {
 //            td.cursorPointer=0;
-            WebEngine webEngine = webopen.getEngine();
             staticData.keyBoardType=true;
 //            taskC="";
 //            td.hw.write(keys,task,taskC);
 
             staticData.unvLanguage=LanguageSelector.getValue().toString();
-            td.hw.ChangeLanguage(LanguageSelector.getValue().toString());
-//            td.hw.run();
-//            webEngine.load("file://"+staticData.myDir+"/.src/Images/keyboard/tempKeyboard.html");
-//            return;
 
         }else if(mouseEvent.getSource().equals(btnTop)||mouseEvent.getSource().equals(btnBottom)){
             if(mouseEvent.getSource().equals(btnTop)){
@@ -681,19 +549,17 @@ public class MainWindowController {
             td.tempString=td.tempString+lsnparts[i];
         }
         task=td.toPrint;
-//        taskuser.setText(td.toPrint);
-        taskC="_";
-//        userinput2.setText(td.tempString);
-//        userinput1.setText("_");
-//        userinput3.setText("");
+
+        taskC="";
+        toType.setText(task);
+        youTyped.setText(taskC);
+
+        keyboardLoad();
+
         td.cursorPointer=0;
         td.lstcursorPointer=0;
         td.temp1=td.toPrint.split("");
-        keys.clear();
-        keys.put(td.temp1[td.cursorPointer],1);
-        td.hw.write(keys,task,taskC);
-        td.t.run();
-        keyboardLoad();
+
     }
 
 
@@ -710,12 +576,10 @@ public class MainWindowController {
             return;
         }
 
-//            Parent root = FXMLLoader.load(getClass().getResource("addUserWindow.fxml"));
-//            dialog.getDialogPane().setContent(root);
-//            dialog.setTitle("Add New User");
+
         dialog.getDialogPane().getButtonTypes().add(ButtonType.OK);
         dialog.getDialogPane().getButtonTypes().add(ButtonType.CLOSE);
-//        System.out.println("Ok");
+
         Optional<ButtonType> result = dialog.showAndWait();
         if(result.isPresent()&&result.get()==ButtonType.OK){
             addUserClass newUser = fxmlLoader.getController();
@@ -723,15 +587,35 @@ public class MainWindowController {
                 result=dialog.showAndWait();
             }
 
-//            System.out.println("OK Pressed");
-
         }else {
-//            System.out.println("Cancel Pressed");
+
         }
 
 
     }
 
+    public void changeFont(String language) {
+
+        toType.getStyleClass().remove("English");
+        toType.getStyleClass().remove("Hindi");
+        toType.getStyleClass().remove("Nepali");
+        toType.getStyleClass().remove("Punjabi");
+        toType.getStyleClass().remove("Urdu");
+        toType.getStyleClass().remove("Tamil");
+        toType.getStyleClass().remove("Bengali");
+
+
+        toType.getStyleClass().add(language);
+
+        youTyped.getStyleClass().remove("English");
+        youTyped.getStyleClass().remove("Hindi");
+        youTyped.getStyleClass().remove("Nepali");
+        youTyped.getStyleClass().remove("Punjabi");
+        youTyped.getStyleClass().remove("Urdu");
+        youTyped.getStyleClass().remove("Tamil");
+        youTyped.getStyleClass().remove("Bengali");
+
+        youTyped.getStyleClass().add(language);
+
+    }
 }
-
-

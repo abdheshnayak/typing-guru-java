@@ -1,7 +1,6 @@
 package com.abdheshnayak.typingguru.JavaClasses;
 
 import com.abdheshnayak.typingguru.addUserClass;
-import com.abdheshnayak.typingguru.keyboardController.htmlWriter;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.control.ButtonType;
 import javafx.scene.control.Dialog;
@@ -20,9 +19,7 @@ public class tempDatas {
     public isShiftdownConvert is = new isShiftdownConvert();
     public ArrayList<String> lsnlist = new ArrayList<>();
 
-    public Thread t;
     public Thread t1;
-    public Thread t2;
 
     public boolean dialogptr=true;
     public int spaceCounter;
@@ -33,7 +30,6 @@ public class tempDatas {
     public int filePointer =0;
 
 
-    public htmlWriter hw= new htmlWriter();
     public toTypeController tw=new toTypeController();
     public String[] temp1;
     public String tempString;
@@ -51,8 +47,6 @@ public class tempDatas {
         filename=staticData.myDir+"/.src/lesson/"+lsnlist.get(filePointer);
         fileReaderClass f = new fileReaderClass(filename);
         lsn= f.run();
-
-
     }
 
     public void userDialog(GridPane MainGridPane) throws IOException, ClassNotFoundException {

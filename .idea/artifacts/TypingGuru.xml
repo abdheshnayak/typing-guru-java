@@ -6,7 +6,7 @@
         <option name="appClass" value="com.abdheshnayak.typingguru.Main" />
         <option name="description" value="This is app to increase Your Typing Speed.&#10;This is for Linux Platform only.&#10;We are Working For Windows." />
         <option name="htmlPlaceholderId" value="" />
-        <option name="nativeBundle" value="image" />
+        <option name="nativeBundle" value="all" />
         <option name="title" value="TypingGuru" />
         <option name="vendor" value="" />
         <option name="version" value="1.0" />

@@ -23,8 +23,11 @@ public class toTypeController implements Runnable{
     public toTypeController() {
 
 
-        datas.add("<strong style=\"box-shadow:0px 0px 20px #14B524; background-color:#86c086\">");
+        datas.add("<strong >");
         All.put("green", 0);
+
+        datas.add("<strong style=\"box-shadow: 0px 0px 5px 1px grey;padding: 2px; background: rgba(255,255,255,0.2); margin:2px; border-radius:4px;\">");
+        All.put("float",All.size());
         datas.add("<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"https://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n" +
                 "<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\">\n" +
                 "<head>\n" +
@@ -36,10 +39,10 @@ public class toTypeController implements Runnable{
                 "<body>\n" +
                 "\n" +
                 "<div class=\"keyboard\" >\n" +
-                "    <p align=\"Center\"; style=\"Font-size:22px;\">");
+                "    <p style=\"Font-size:22px;\">");
         All.put("htmlStart", All.size());
         datas.add("</strong>");
-        All.put("greenClose", All.size());
+        All.put("strongClose", All.size());
         datas.add("</p>\n" +
                 "</div>\n" +
                 "</body>\n" +
@@ -96,7 +99,7 @@ public class toTypeController implements Runnable{
     }
 
     public void write(String strFirst,String strSecond,String strThird) throws IOException {
-
+//        System.out.println(strFirst+" : "+strSecond+" : "+strThird);
         try {
             String temp = "";
             for (int i = 0; i < strFirst.length(); i++) {
@@ -117,7 +120,7 @@ public class toTypeController implements Runnable{
                     temp += strSecond.charAt(i);
                 }
             }
-            strings.strWord = temp;
+            strings.strWord = strSecond;
 //            System.out.println(temp);
 
             temp = "";
@@ -141,7 +144,7 @@ public class toTypeController implements Runnable{
     public void run() {
         FileWriter outputStream = null;
         lsn = "";
-        lsn = datas.get(All.get("htmlStart")) + strings.strFirst + datas.get(All.get("green")) + strings.strWord + datas.get(All.get("greenClose")) + strings.strLast + datas.get(All.get("endHtml"));
+        lsn = datas.get(All.get("htmlStart")) + strings.strFirst + datas.get(All.get("green")) + strings.strWord + datas.get(All.get("strongClose")) + strings.strLast + datas.get(All.get("endHtml"));
 
 //        System.out.println(lsn);
         try {

@@ -1,0 +1,179 @@
+@font-face {    font-family:'Kruti Dev 010';    src:url("Fonts/Hindi.ttf");    }
+@font-face {    font-family:'Preeti';    src:url("Fonts/Nepali.ttf");    }
+@font-face {    font-family:'SutonnyMJ';    src:url("Fonts/Bengali.ttf");    }
+@font-face {    font-family:'GurbaniAkhar';    src:url("Fonts/Punjabi.ttf");    }
+@font-face {    font-family:'Baamini';    src:url("Fonts/Tamil.ttf");    }
+@font-face {    font-family:'Urdu';    src:url("Fonts/Urdu.ttf");    }
+@font-face {    font-family:'Open Sans';    src:url("Fonts/English.ttf");    }
+
+.keyboard{
+  -fx-font-size: 1em;
+  -fx-padding:10;
+  -fx-spacing: 2;
+  -fx-background-color: #111;
+  -fx-background-radius: 9px;
+}
+
+.row{
+    -fx-spacing: 2;
+}
+.key{
+
+  -fx-transition:5s all ease;
+  -fx-min-height:40px;
+  -fx-max-height:40px;
+  -fx-spacing: 2;
+  -fx-font-size: 13px;
+  -fx-background-color: linear-gradient(to right,#4B494C, #2C2932);
+  -fx-background-radius: 2px;
+  -fx-padding: 2px;
+}
+.dual {
+  -fx-min-width: 40px;
+  -fx-max-width: 40px;
+  -fx-alignment: top_left;
+  -fx-line-height: 20px;
+  -fx-width:30px;
+}
+.backspace{
+  -fx-alignment:center;
+  -fx-padding: 4px;
+  -fx-min-width: 75px;
+  -fx-max-width: 75px;
+}
+.tab{
+  -fx-padding: 4px;
+  -fx-alignment:center;
+  -fx-min-width: 50px;
+  -fx-max-width: 50px;
+}
+.slash{
+  -fx-padding: 4px;
+  -fx-min-width: 65px;
+  -fx-max-width: 65px;
+}
+.caps{
+  -fx-alignment:center;
+  -fx-padding: 2px;
+  -fx-min-width: 72px;
+  -fx-max-width: 72px;
+}
+.enter{
+  -fx-alignment:center;
+  -fx-padding: 2px;
+  -fx-min-width: 85px;
+  -fx-max-width: 85px;
+}
+.shift.left{
+  -fx-alignment:center;
+  -fx-padding: 2px;
+  -fx-min-width: 93px;
+  -fx-max-width: 93px;
+}
+.shift.right{
+  -fx-alignment:center;
+  -fx-padding: 2px;
+  -fx-min-width: 106px;
+  -fx-max-width: 106px;
+}
+.ctrl{
+  -fx-alignment:center;
+  -fx-padding: 2px;
+  -fx-min-width: 60px;
+  -fx-max-width: 60px;
+}
+.win{
+  -fx-alignment:center;
+  -fx-padding: 2px;
+  -fx-min-width: 45px;
+  -fx-max-width: 45px;
+}
+.space{
+  -fx-min-width: 262px;
+  -fx-max-width: 262px;
+}
+.redbg{
+  -fx-background-color: linear-gradient(to right,#e33, #e22);
+}
+
+.Hindi{
+  -fx-font-size: 12pt;
+  -fx-font-weight: bold;
+  -fx-font-family: 'Kruti Dev 010';
+}
+.Nepali{
+  -fx-font-size: 12pt;
+  -fx-font-weight: bold;
+  -fx-font-family: 'Preeti';
+}
+.Bengali{
+  -fx-font-size: 12pt;
+  -fx-font-weight: bold;
+  -fx-font-family: 'SutonnyMJ';
+}
+.Tamil{
+  -fx-font-size: 12pt;
+  -fx-font-weight: bold;
+  -fx-font-family: 'Baamini';
+}
+.Urdu{
+  -fx-font-size: 8pt;
+  -fx-font-weight: bold;
+  -fx-font-family: 'Urdu';
+}
+.Punjabi{
+  -fx-font-size: 10pt;
+  -fx-font-weight: bold;
+  -fx-font-family: 'GurbaniAkhar';
+}
+.English{
+  -fx-font-family: 'Open Sans';
+  -fx-font-size: 9pt;
+}
+.greenbg{
+  -fx-background-color: linear-gradient(to right,#3a3, #2a2);
+}
+.key:hover{
+  -fx-background-color: linear-gradient(to right,#4B495C, #2C2952);
+}
+.toType{
+  -fx-font-size:50pt;
+}
+.freeTypingBox{
+  -fx-effect:innershadow( gaussian , blue , 10 , 0 , 0 , 0 );
+}
+
+.freeTypingBoxHindi{
+  -fx-font-size:26pt;
+  -fx-font-weight: bold;
+  -fx-font-family: 'Kruti Dev 010';
+}
+.freeTypingBoxNepali{
+  -fx-font-size:26pt;
+  -fx-font-weight: bold;
+  -fx-font-family: 'Preeti';
+}
+.freeTypingBoxBengali{
+  -fx-font-size:26pt;
+  -fx-font-weight: bold;
+  -fx-font-family: 'SutonnyMJ';
+}
+.freeTypingBoxTamil{
+  -fx-font-size:25pt;
+  -fx-font-weight: bold;
+  -fx-font-family: 'Baamini';
+}
+.freeTypingBoxUrdu{
+  -fx-font-size:25pt;
+  -fx-font-weight: bold;
+  -fx-font-family: 'Urdu';
+}
+.freeTypingBoxPunjabi{
+  -fx-font-size:25pt;
+  -fx-font-weight: bold;
+  -fx-font-family: 'GurbaniAkhar';
+}
+.freeTypingBoxEnglish{
+  -fx-font-family: 'Open Sans';
+  -fx-font-size:20pt;
+}
